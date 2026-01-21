@@ -1,17 +1,16 @@
-/* Navbar background */
+/* NAVBAR */
 .sign-navbar {
   background-color: #08a4e3;
   padding: 20px 0;
 }
 
-/* Menu text */
 .sign-navbar .nav-link {
   color: white;
   font-weight: 600;
 }
 
+/* ICONS */
 .icon-circle {
-
   width: 42px;
   height: 42px;
   border-radius: 50%;
@@ -29,74 +28,41 @@
   color: #08a4e3;
 }
 
-.navbar-brand {
-  width: 100px;
-}
-
+/* CAROUSEL */
 .slide {
-  height: auto;
   min-height: 400px;
   object-fit: cover;
   max-height: 80vh;
 }
 
-.card {
-  box-shadow: 4px 4px 10px gray;
+.carousel-caption p {
+  color: #08a4e3;
+  font-weight: 400;
+  font-size: large;
 }
 
+/* PRODUCTS */
 .producttext {
   padding: 70px 20px;
   text-align: center;
 }
 
-.card img {
-  height: 220px;
-  object-fit: cover;
+.producttext h1 {
+  color: white;
 }
 
-.footer {
-  background-color: #08a4e3;
-  margin-top: 40px;
-}
-
-.footer h1,
-li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.footer li {
-  font-size: x-large;
-}
-
-@media (max-width: 768px) {
-  .slide {
-    min-height: 250px;
-  }
-
-  .producttext {
-    padding: 40px 10px;
-  }
-
-  .footer li {
-    font-size: large;
-  }
-
-  .sign-navbar .navbar-brand img {
-    height: 40px;
-  }
+.producttext h2 {
+  color: #08a4e3;
 }
 
 .product-card {
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 4px 4px 10px gray;
 }
 
-
 .product-img-wrapper {
-  height: 220px;           
+  height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,10 +75,44 @@ li {
   object-fit: contain;
 }
 
+/* CARD HEADER */
 .card-header-custom {
   background-color: #08a4e3;
-  color: #fff;
+  color: white;
   text-align: center;
   padding: 10px;
   font-size: 20px;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #08a4e3;
+  margin-top: 40px;
+}
+
+.footer h1,
+.footer li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer li {
+  font-size: x-large;
+  list-style: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .slide {
+    min-height: 250px;
+  }
+
+  .producttext {
+    padding: 40px 10px;
+  }
+
+  .footer li {
+    font-size: large;
+  }
 }
